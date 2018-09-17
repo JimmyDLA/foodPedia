@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 		fontSize: 30
 	},
 	txt2: {
-		color:'#fec180',
+		color:'#ff8993',
 		fontSize: 30
 	},
 	linearGradient: {

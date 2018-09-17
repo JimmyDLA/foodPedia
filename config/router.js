@@ -72,13 +72,13 @@ export const AccStack = StackNavigator({
       title: 'Account'
     }
   }
-})
+});
 
 export const Tabs = TabNavigator({
   Home: {
     screen: HomeStack,
     navigationOptions: {
-        tabBarIcon: ({tintColor}) => <Icon name="home" size={30} color={tintColor}/>
+        tabBarIcon: ({tintColor}) => <Icon name="home" size={30} color={tintColor} />
     },
   },
   Favorites: {
@@ -98,6 +98,10 @@ export const Tabs = TabNavigator({
 		navigationOptions: {
 			tabBarIcon: ({tintColor}) => <Icon name="account-circle" size={30} color={tintColor}/>
 		},
+	}
+},{
+	tabBarOptions: {
+		activeTintColor: '#ff8993',
 	}
 });
 
