@@ -6,7 +6,7 @@ class Account extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>ACCOUNT PAGE!</Text>
+        <Text style={styles.txt}>ACCOUNT PAGE!</Text>
       </View>
     );
   }
@@ -15,10 +15,13 @@ class Account extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(155, 89, 182)',
     alignItems: 'center',
     justifyContent: 'center',
   },
+	txt: {
+		color: "white"
+	}
 });
 
 

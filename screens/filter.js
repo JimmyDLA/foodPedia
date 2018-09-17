@@ -1,15 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, TabNavigator, Icon } from 'react-native';
 
-// import Coupons from './screens/coupons';
-// import Login from './screens/login';
-// import NativeAPI from './screens/nativeApi';
 
 class Filter extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Filter PAGE!</Text>
+        <Text style={styles.txt}>Filter PAGE!</Text>
       </View>
     );
   }
@@ -18,10 +15,13 @@ class Filter extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(129, 236, 236)',
     alignItems: 'center',
     justifyContent: 'center',
   },
+	txt: {
+		color: "white"
+	}
 });
 
 

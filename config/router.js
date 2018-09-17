@@ -4,6 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Home from '../screens/home';
 import Login from '../screens/login';
+import Signup from '../screens/signup';
 import Recipe from '../screens/recipe';
 import Search from '../screens/search';
 import Filter from '../screens/filter';
@@ -13,16 +14,17 @@ import Favorites from '../screens/favorites';
 
 
 export const HomeStack = StackNavigator({
-  Login: {
-    screen: Login,
-    navigationOptions: {
-      title: 'Login',
-    }
-  },
   Home: {
     screen: Home,
     navigationOptions: {
-      title: 'What ingredients do you have?'
+      title: 'What ingredients do you have?',
+			headerStyle: {
+				backgroundColor: '#f4511e',
+			},
+			headerTintColor: '#fff',
+			headerTitleStyle: {
+				fontWeight: 'bold',
+			},
     }
   },
 	Recipes: {
@@ -40,7 +42,7 @@ export const HomeStack = StackNavigator({
 	Recipe: {
 		screen: Recipe,
 		navigationOptions: {
-			title: 'Filter'
+			title: 'Recipe'
 		}
 	}
 });
@@ -94,12 +96,18 @@ export const Tabs = TabNavigator({
 	Account: {
 		screen: AccStack,
 		navigationOptions: {
-				tabBarIcon: ({tintColor}) => <Icon name="account-circle" size={30} color={tintColor}/>
+			tabBarIcon: ({tintColor}) => <Icon name="account-circle" size={30} color={tintColor}/>
 		},
 	}
 });
 
 export const Root = StackNavigator({
+	Login: {
+		screen: Login
+	},
+	Signup: {
+		screen: Signup
+	},
   Tabs: {
     screen: Tabs,
   }

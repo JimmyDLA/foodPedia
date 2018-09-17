@@ -1,15 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, TabNavigator, Icon } from 'react-native';
 
-// import Coupons from './screens/coupons';
-// import Login from './screens/login';
-// import NativeAPI from './screens/nativeApi';
 
 class Search extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>SEARCH PAGE!</Text>
+        <Text style={styles.txt}>SEARCH PAGE!</Text>
       </View>
     );
   }
@@ -18,10 +15,13 @@ class Search extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(230, 126, 34)',
     alignItems: 'center',
     justifyContent: 'center',
   },
+	txt: {
+		color: "white"
+	}
 });
 
 

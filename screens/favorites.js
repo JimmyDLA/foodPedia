@@ -6,7 +6,7 @@ class Favorites extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>FAVORITES PAGE!</Text>
+        <Text style={styles.txt}>FAVORITES PAGE!</Text>
       </View>
     );
   }
@@ -15,10 +15,13 @@ class Favorites extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(192, 57, 43)',
     alignItems: 'center',
     justifyContent: 'center',
   },
+	txt: {
+		color: "white"
+	}
 });
 
 
