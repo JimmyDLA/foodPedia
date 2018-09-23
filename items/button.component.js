@@ -1,21 +1,21 @@
 import React from 'react';
-import LinearGradient from 'react-native-linear-gradient';
-import { StyleSheet, Text, View, TabNavigator, Icon, TouchableOpacity } from 'react-native';
+import {ImageBackground, StyleSheet, Text, View, TabNavigator, Icon, TouchableOpacity } from 'react-native';
 
 export const Button1 = ({ text, onClick }) => (
-	<LinearGradient colors={['#fec180', '#ff8993']} style={styles.linearGradient}>
   <TouchableOpacity
-    onPress={onClick}
-		style={ styles.button1 }>
+  onPress={onClick}
+	style={ styles.button1 }>
+		<ImageBackground
+		source={require('../images/background/Rectangle5.png')}
+		style={styles.img}>
 			<Text style={ styles.txt1 } >
 				{text}
 			</Text>
+		</ImageBackground>
   </TouchableOpacity>
-	</LinearGradient>
 );
 
 export const Button2 = ({ text, onClick }) => (
-	// <LinearGradient colors={['#fec180', '#ff8993']} style={styles.linearGradient}>
   <TouchableOpacity
     onPress={onClick}
 		style={ styles.button2 }>
@@ -23,18 +23,23 @@ export const Button2 = ({ text, onClick }) => (
 				{text}
 			</Text>
   </TouchableOpacity>
-	// </LinearGradient>
 );
 
 const styles = StyleSheet.create({
 	button1: {
-		// backgroundColor: "rgb(46, 204, 113)",
-		height: 60,
-		width: 250,
+		height: 80,
+		width: 300,
 		alignItems: 'center',
 		justifyContent: 'center',
 		borderRadius: 12,
-		padding: 10
+		padding: 10,
+		shadowColor: "rgba(0,0,0,0.1)" ,
+		shadowOffset: {
+			height:4,
+			width:0
+		},
+		shadowOpacity: 1,
+		shadowRadius: 1,
 	},
 	button2: {
 		backgroundColor: "rgb(250,250,250)",
@@ -53,9 +58,13 @@ const styles = StyleSheet.create({
 		color:'#ff8993',
 		fontSize: 30
 	},
-	linearGradient: {
-		borderRadius:12
-	}
+	img: {
+		flex: 1,
+		resizeMode: 'cover',
+		justifyContent: 'center',
+		alignItems: 'center',
+		width:300,
+	},
 });
 
 // buttonS1
