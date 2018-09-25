@@ -60,7 +60,7 @@ class Login extends React.Component {
 					</View>
 					<View style={styles.footer}>
 						<Text style={styles.bottomTxt}>
-							DON'T HAVE AN ACCOUNT?
+							DONT HAVE AN ACCOUNT?
 						</Text>
 						<Button
 						onPress={() => this.onSignup()}
@@ -96,12 +96,6 @@ const styles = StyleSheet.create({
 		shadowOpacity: 1,
 		shadowRadius: 5,
 
-	},
-	img2: {
-		flex: 1,
-		resizeMode: 'cover',
-		justifyContent: 'center',
-		alignItems: 'center',
 	},
 	inputCont: {
 		top:-30,
@@ -166,10 +160,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: 'white',
 		justifyContent: 'center',
-	},
-	top: {
-		width: "100%",
-		height: "50%",
 	},
 	bottom: {
 		width: "100%",

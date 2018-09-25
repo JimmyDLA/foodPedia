@@ -6,7 +6,7 @@ export const Button1 = ({ text, onClick }) => (
   onPress={onClick}
 	style={ styles.button1 }>
 		<ImageBackground
-		source={require('../images/background/Rectangle5.png')}
+		source={require('../images/background/Rect5.png')}
 		style={styles.img}>
 			<Text style={ styles.txt1 } >
 				{text}
